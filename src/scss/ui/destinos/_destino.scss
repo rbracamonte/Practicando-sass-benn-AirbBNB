@@ -1,0 +1,16 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.destino{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    &__imagen{
+        width: 14rem;
+    }
+    &__nombre,
+    &__distancia{
+        margin: 0;
+    }
+}

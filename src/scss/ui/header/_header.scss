@@ -1,0 +1,30 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.header{
+    background-image: url('../img/header.jpg');
+    background-position:50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem 0 20rem;
+}
+.barra {
+    display: none;
+    @include m.tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__nombre{
+        color: v.$blanco;
+        margin: 0;
+    }
+    &__navegacion{
+        display: flex;
+        gap: 4rem;
+        justify-content: space-between;
+    }
+    &__link{
+        color: v.$blanco;
+    }
+}
